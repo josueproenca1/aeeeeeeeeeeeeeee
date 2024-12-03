@@ -1,0 +1,66 @@
+/* Reset básico para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+/* reset.css */
+
+/* Remove margin and padding from all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set default font styles */
+body {
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    line-height: 1.6; /* Aumenta a altura da linha para melhor legibilidade */
+}
+
+/* Remove list styling */
+ul {
+    list-style: none; /* Remove bullets de listas não ordenadas */
+}
+
+/* Remove underline from links */
+a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: inherit; /* Herda a cor do elemento pai */
+}
+
+/* Set image styles */
+img {
+    max-width: 100%; /* Faz com que as imagens sejam responsivas */
+    height: auto; /* Mantém a proporção das imagens */
+}
+
+/* Define estilos para tabelas */
+table {
+    border-collapse: collapse; /* Remove espaçamento entre células */
+    width: 100%; /* Tabelas ocupam toda a largura disponível */
+}
+
+/* Define bordas padrões para tabelas */
+th, td {
+    border: 1px solid #ddd; /* Borda padrão para células da tabela */
+    padding: 8px; /* Espaçamento interno nas células */
+}
+
+/* Define estilo de cabeçalho */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal; /* Remove o peso negrito padrão dos cabeçalhos */
+    margin-bottom: 10px; /* Espaçamento inferior nos cabeçalhos */
+}
+
+/* Define estilo para seções */
+section {
+    padding: 20px; /* Espaçamento interno nas seções */
+    margin: 10px 0; /* Espaçamento externo nas seções */
+}

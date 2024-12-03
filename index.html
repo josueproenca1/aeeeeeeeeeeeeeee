@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Gotham City CCM</title>
+</head>
+<body>
+
+<header>
+    <div class="menu-hamburger" id="menu-toggle">
+        &#9776;
+    </div>
+    <img src="imagens/LOGO GOTHAM.png" alt="" class="logo"> 
+    <nav id="nav-menu">
+        <div class="close-button" id="close-button">&times;</div>
+        <ul>
+            <li><a href="http://127.0.0.1:5500/index.html">INICIO</a></li>
+            <li><a href="https://www.instagram.com/gothamcity.ccm?igsh=MTE5MHV5a3NkYTk5Mw==">Instagram</a></li>
+            <li><a href="https://chat.whatsapp.com/FCDxlwtmog3JmATCTkMonS" target="_blank">WhatsApp</a></li>
+            <li><a href="https://www.instagram.com/ccm.joaoxxiii?igsh=MWtoeGNiY200d3VzMA==">Contato</a></li>
+            <li><a href="qualquercoisa.html">Vendas</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home" class="section">
+    <div id="typed" class="typed-text"></div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var options = {
+            strings: ["Bem-vindo à Feira do Gotham City, explore nossas ideias e encontre a sua!"],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true
+        };
+
+        var typed = new Typed("#typed", options);
+    </script>
+</section>
+
+<section id="servicos" class="section">
+    <h2>Objetivos</h2>
+    <p>Incentivar o desenvolvimento de novas tecnologias e soluções através da robótica e o desenvolvimento de ideias inovadoras e negócios, estimulando o surgimento de novos empreendedores.</p>
+</section>
+
+<section id="sobre" class="section">
+    <h2>Sobre a Feira</h2>
+    <p>Proporcionar um ambiente onde os participantes possam desenvolver habilidades técnicas, como a criação de robôs e a solução</p>
+</section>
+
+<section id="form" class="section">
+    <h2>Contemplando sua experiência.</h2>
+    <div class="botao-container">
+        <a href="https://forms.gle/h9ksmDfichx3tn1k6" class="form-button">Formulário</a>
+    </div>
+</section>
+
+<main>
+    <section id="home">
+        <div class="titulo-container">
+            <h1>Nossos Colaboradores:</h1>
+            <div class="colaboradores">
+                <div class="colaborador">
+                    <h2>Tropicalia Doces</h2>
+                    <img src="imagens/Tropicalia.jpg" alt="" class="imagem-colaborador">
+                </div>
+                <div class="colaborador">
+                    <h2>Sabor Mágico</h2>
+                    <img src="imagens/sabor.jpg" alt="" class="imagem-colaborador">
+                </div>
+                <div class="colaborador">
+                    <h2>Arte e Doces</h2>
+                    <img src="imagens/ArteeDoces.jpg" class="imagem-colaborador">
+                </div>
+                <div class="colaborador">
+                    <h2>Tentação Salgada</h2>
+                    <img src="imagens/Tentacao.jpg" alt="" class="imagem-colaborador">
+                </div>
+            </div>
+            <p>Todas os nossos empreendedores trazem uma experiência maravilhosa a você. Entre em contato conosco através do nosso menu no topo da página, ou procure alguém de nossa turma!</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Gotham City, CCM JOÃO XXIII. Todos os direitos reservados, By Neves e Josué.</p>
+</footer>
+
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    const closeButton = document.getElementById('close-button');
+
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+
+    closeButton.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+    });
+</script>
+
+</body>
+</html>

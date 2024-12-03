@@ -1,0 +1,665 @@
+#typed {
+    font-size: 5vw; /* Ajusta com base na largura da viewport */
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px; /* Reduz o tamanho da fonte em telas pequenas */
+    }
+
+    h1 {
+        font-size: 1.8em; /* Reduz ainda mais em dispositivos móveis */
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+}
+
+body {
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Estilo padrão */
+header {
+    background: #000000;
+    color: #000000;
+    padding: 5em;
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    color: #000000;
+    size: 25px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    color: #000000;
+    size: 30px;
+}
+
+/* Estilos para dispositivos pequenos */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Estilo principal */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background: #000000;
+    color: #f4f4f4;
+
+}
+
+/* Estilos para tablets */
+@media (min-width: 601px) and (max-width: 900px) {
+    body {
+        padding: 10px;
+    }
+}
+
+/* Estilos para desktops */
+@media (min-width: 901px) {
+    main {
+        max-width: 900px;
+        margin: auto;
+    }
+}
+
+header {
+    background-image: url('SITEFEIRAO/imagens/LOGO GOTHAM.PNG');
+    background-size: cover; /* A imagem cobre todo o cabeçalho */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição */
+    height: 200px; /* Defina uma altura para o cabeçalho */
+    color: white; /* Cor do texto para contraste */
+    display: flex; /* Para centralizar o conteúdo */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Alinha horizontalmente */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+.titulo-container {
+    display: flex; /* Ativa o flexbox */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    flex-wrap: wrap; /* Permite quebra de linha se necessário */
+    margin: 20px 0; /* Espaço acima e abaixo do container */
+}
+ h1 {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+h2 {
+    margin: 0 10px; /* Espaço entre os títulos */
+    padding: 10px; /* Espaço interno dos títulos */
+    color: #333; /* Cor dos títulos */
+}
+.botao-container {
+    text-align: center; /* Centraliza o botão */
+    margin-top: 20px; /* Espaço acima do botão */
+}
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px; /* Tamanho base da fonte */
+    background: #f4f4f4;
+}
+
+header {
+    background: #000000;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px; /* Tamanho base da fonte */
+    background: #f4f4f4;
+}
+
+header {
+    background: #000000;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+.section {
+    padding: 20px;
+}
+
+#typed {
+    font-size: 2em; /* Tamanho inicial do texto */
+    color: #333;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px; /* Tamanho da fonte reduzido em telas pequenas */
+    }
+
+    #typed {
+        font-size: 1.5em; /* Tamanho ajustado em telas menores */
+    }
+}
+
+@media (max-width: 400px) {
+    #typed {
+        font-size: 1.2em; /* Tamanho ainda menor para telas pequenas */
+    }
+}
+#typed {
+    font-size: 5vw; /* Ajusta com base na largura da viewport */
+}
+/* Estilo para a seção animada */
+#home {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.typed-text {
+    font-size: 55px; /* Tamanho da fonte aumentado */
+    font-family: 'Courier New', monospace;
+    border-right: 2px solid;
+    display: inline-block;
+    white-space: normal; /* Permite quebra de linha */
+    overflow: hidden; /* Esconde o excesso de texto */
+    color: black; /* Cor das letras */
+    animation: blink 0.75s step-end infinite; /* Efeito de piscar do cursor */
+    max-width: 100%; /* Limita a largura ao tamanho da tela */
+    box-sizing: border-box; /* Inclui padding e border no tamanho total */
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent; /* Cursor pisca */
+    }
+}
+
+/* Estilos adicionais */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(218, 192, 192);
+}
+
+.section {
+    padding: 50px 20px;
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    .typed-text {
+        font-size: 3rem; /* Ajusta o tamanho da fonte em telas menores */
+        overflow-wrap: break-word; /* Quebra palavras longas */
+    }
+}
+/* Reset básico para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/* Estilos do header */
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Estilo do menu hamburguer */
+.menu-hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+nav {
+    display: none; /* Esconde o menu por padrão */
+    background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro do menu */
+    position: absolute; /* Para posicionar em relação ao header */
+    left: 0;
+    top: 60px; /* Abaixo do header */
+    width: 100%;
+    transition: transform 0.3s ease; /* Suave animação ao abrir/fechar */
+}
+
+nav.active {
+    display: block; /* Mostra o menu quando ativo */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column; /* Coloca os itens em coluna */
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white; /* Texto do menu em branco */
+    padding: 10px;
+}
+
+/* Estilo do botão de fechar */
+.close-button {
+    font-size: 30px;
+    cursor: pointer;
+    text-align: right; /* Alinha o botão à direita */
+    padding: 10px;
+    color: white; /* Texto do botão de fechar em branco */
+}
+
+/* Estilo para a seção animada */
+#home {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.typed-text {
+    font-size: 55px; /* Tamanho da fonte aumentado */
+    font-family: 'Courier New', monospace;
+    border-right: 2px solid;
+    display: inline-block;
+    white-space: normal; /* Permite quebra de linha */
+    overflow: hidden; /* Esconde o excesso de texto */
+    color: black; /* Cor das letras */
+    animation: blink 0.75s step-end infinite; /* Efeito de piscar do cursor */
+    max-width: 100%; /* Limita a largura ao tamanho da tela */
+    box-sizing: border-box; /* Inclui padding e border no tamanho total */
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent; /* Cursor pisca */
+    }
+}
+
+/* Estilos adicionais */
+.section {
+    padding: 50px 20px;
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+}
+
+/* Estilos para os colaboradores */
+.colaboradores {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 30px; /* Espaçamento entre os nomes das empresas */
+    margin: 20px 0; /* Margem vertical */
+}
+
+.colaboradores h2 {
+    margin: 0; /* Remove margens dos h2 */
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    .typed-text {
+        font-size: 3rem; /* Ajusta o tamanho da fonte em telas menores */
+        overflow-wrap: break-word; /* Quebra palavras longas */
+    }
+
+    .colaboradores {
+        flex-direction: column; /* Altera para coluna em telas menores */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    nav ul {
+        flex-direction: column; /* Coloca os itens do menu em coluna */
+    }
+}
+/* Estilos para o botão do formulário */
+.botao-container {
+    text-align: center; /* Centraliza o botão */
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+.form-button {
+    display: inline-block; /* Para permitir o padding */
+    padding: 15px 30px; /* Tamanho do botão */
+    background-color: #000000; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    font-size: 20px; /* Tamanho da fonte */
+    border: none; /* Remove borda padrão */
+    border-radius: 5px; /* Cantos arredondados */
+    text-transform: uppercase; /* Letras maiúsculas */
+    transition: background-color 0.3s, transform 0.3s; /* Efeitos de transição */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+.form-button:hover {
+    background-color: #000000; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
+
+.form-button:active {
+    transform: scale(0.95); /* Efeito de clique */
+}
+/* Reset básico para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Fonte Roboto */
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Cor de fundo clara */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilos do header */
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000000; /* Fundo escuro do cabeçalho */
+    color: white; /* Texto em branco */
+}
+
+/* Estilo do menu hamburguer */
+.menu-hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 20px;
+    color: white; /* Cor do menu hamburguer */
+}
+
+nav {
+    display: none; /* Esconde o menu por padrão */
+    background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro do menu */
+    position: absolute; /* Para posicionar em relação ao header */
+    left: 0;
+    top: 60px; /* Abaixo do header */
+    width: 100%;
+    transition: transform 0.3s ease; /* Suave animação ao abrir/fechar */
+}
+
+nav.active {
+    display: block; /* Mostra o menu quando ativo */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column; /* Coloca os itens em coluna */
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white; /* Texto do menu em branco */
+    padding: 10px;
+    transition: background 0.3s; /* Transição suave para o fundo */
+}
+
+nav a:hover {
+    background: rgba(0, 0, 0, 0.2); /* Efeito de hover */
+}
+
+/* Estilo do botão de fechar */
+.close-button {
+    font-size: 30px;
+    cursor: pointer;
+    text-align: right; /* Alinha o botão à direita */
+    padding: 10px;
+    color: white; /* Texto do botão de fechar em branco */
+}
+
+/* Estilo para a seção animada */
+#home {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.typed-text {
+    font-size: 55px; /* Tamanho da fonte aumentado */
+    font-family: 'Courier New', monospace;
+    border-right: 2px solid;
+    display: inline-block;
+    white-space: normal; /* Permite quebra de linha */
+    overflow: hidden; /* Esconde o excesso de texto */
+    color: black; /* Cor das letras */
+    animation: blink 0.75s step-end infinite; /* Efeito de piscar do cursor */
+    max-width: 100%; /* Limita a largura ao tamanho da tela */
+    box-sizing: border-box; /* Inclui padding e border no tamanho total */
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent; /* Cursor pisca */
+    }
+}
+
+/* Estilos adicionais */
+.section {
+    padding: 50px 20px;
+    font-size: 20px;
+    background: white; /* Fundo branco para as seções */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: 20px 0; /* Espaçamento entre seções */
+}
+
+h2 {
+    color: #000000; /* Cor dos títulos */
+    margin-bottom: 20px; /* Espaço abaixo dos títulos */
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+    background-color: #000000; /* Fundo escuro do footer */
+    color: white; /* Texto em branco */
+}
+
+/* Estilos para os colaboradores */
+.colaboradores {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 30px; /* Espaçamento entre os nomes das empresas */
+    margin: 20px 0; /* Margem vertical */
+}
+
+.colaboradores h2 {
+    margin: 0; /* Remove margens dos h2 */
+}
+
+/* Estilos para o botão do formulário */
+.botao-container {
+    text-align: center; /* Centraliza o botão */
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+.form-button {
+    display: inline-block; /* Para permitir o padding */
+    padding: 15px 30px; /* Tamanho do botão */
+    background-color: #000000; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    font-size: 20px; /* Tamanho da fonte */
+    border: none; /* Remove borda padrão */
+    border-radius: 5px; /* Cantos arredondados */
+    text-transform: uppercase; /* Letras maiúsculas */
+    transition: background-color 0.3s, transform 0.3s; /* Efeitos de transição */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+.form-button:hover {
+    background-color: #000000; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
+
+.form-button:active {
+    transform: scale(0.95); /* Efeito de clique */
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    .typed-text {
+        font-size: 3rem; /* Ajusta o tamanho da fonte em telas menores */
+        white-space: normal; /* Permite quebra de linha */
+        overflow-wrap: break-word; /* Quebra palavras longas */
+    }
+}
+/* Reduz o tamanho das imagens na galeria em 80% */
+.gallery img {
+    max-width: 20%; /* Reduz o tamanho para 20% da largura do container */
+    max-height: 20%; /* Garante que a altura seja proporcional */
+    width: auto; /* Mantém a proporção ao reduzir */
+    height: auto; /* Mantém a proporção ao reduzir */
+    display: block; /* Garante que a imagem seja tratada como bloco */
+    margin: 10px auto; /* Centraliza as imagens dentro do container */
+    transition: transform 0.3s ease; /* Transição suave para a transformação */
+    border-radius: 8px; /* Adiciona cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra leve ao redor da imagem */
+}
+
+.gallery img:hover {
+    transform: scale(1.1); /* Zoom ao passar o mouse */
+}
+
+
+
+/* Adicionando um estilo de sombra para melhorar a aparência das imagens */
+.gallery img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra leve ao redor da imagem */
+}
+
+/* Estilo para o contêiner da imagem do cardápio */
+.container-cardapio {
+    display: flex;
+    justify-content: center; /* Centraliza a imagem */
+    align-items: center; /* Alinha verticalmente */
+    margin: 20px auto; /* Espaçamento ao redor */
+}
+
+/* Estilo para a imagem do cardápio */
+.container-cardapio img {
+    width: 35%; /* Reduz a imagem para 20% do tamanho original */
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: 100%; /* Impede que a imagem ultrapasse o tamanho do contêiner */
+    transition: transform 0.3s ease; /* Transição suave ao passar o mouse */
+    border-radius: 8px; /* Canto arredondado, se necessário */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra leve */
+}
+
+.container-cardapio img:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Estilo para a tabela de preços */
+.tabela-preco {
+    margin-top: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tabela-preco h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.item {
+    margin-bottom: 15px;
+}
+
+.item label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.item input {
+    padding: 5px;
+    width: 60px;
+    font-size: 16px;
+}
+
+.comprar-btn {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    margin: 20px auto;
+    background-color: #000;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comprar-btn:hover {
+    background-color: #333;
+}
+
+#admin-estoque.hidden {
+    display: none;
+}
+
+#admin-login {
+    margin-bottom: 20px;
+}
+
+#admin-estoque form {
+    margin-top: 20px;
+}

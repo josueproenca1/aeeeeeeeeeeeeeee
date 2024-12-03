@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Gotham City CCM</title>
+    <style>
+        /* Seu CSS aqui */
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="menu-hamburger" id="menu-toggle">
+        &#9776;
+    </div>
+    <img src="imagens/LOGO GOTHAM.png" alt="" class="logo"> 
+    <nav id="nav-menu">
+        <div class="close-button" id="close-button">&times;</div>
+        <ul>
+            <li><a href="http://127.0.0.1:5500/index.html">INICIO</a></li>
+            <li><a href="https://www.instagram.com/gothamcity.ccm?igsh=MTE5MHV5a3NkYTk5Mw==">Instagram</a></li>
+            <li><a href="https://chat.whatsapp.com/FCDxlwtmog3JmATCTkMonS" target="_blank">WhatsApp</a></li>
+            <li><a href="https://www.instagram.com/ccm.joaoxxiii?igsh=MWtoeGNiY200d3VzMA==">Contato</a></li>
+            <li><a href="qualquercoisa.html">Vendas</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home" class="section">
+    <div id="typed" class="typed-text"></div>
+    <div class="container-cardapio">
+        <img src="cardapio.png.png" alt="Cardápio">
+    </div>
+    <div class="tabela-preco">
+        <h3>Tabela de Preços</h3>
+        <form id="form-compras">
+            <div class="item">
+                <label for="bolo">Bolo (R$ 3,00) - Estoque: <span id="estoque-bolo">10</span></label>
+                <input type="number" id="bolo" name="bolo" min="0" value="0" />
+            </div>
+            <div class="item">
+                <label for="esfiha">Esfiha (R$ 3,00) - Estoque: <span id="estoque-esfiha">10</span></label>
+                <input type="number" id="esfiha" name="esfiha" min="0" value="0" />
+            </div>
+            <div class="item">
+                <label for="cone-pequeno">Cone Pequeno (R$ 3,00) - Estoque: <span id="estoque-cone-pequeno">10</span></label>
+                <input type="number" id="cone-pequeno" name="cone-pequeno" min="0" value="0" />
+            </div>
+            <div class="item">
+                <label for="cone-grande">Cone Grande (R$ 5,00) - Estoque: <span id="estoque-cone-grande">10</span></label>
+                <input type="number" id="cone-grande" name="cone-grande" min="0" value="0" />
+            </div>
+            <div class="item">
+                <label for="mousse">Mousse (R$ 5,00) - Estoque: <span id="estoque-mousse">10</span></label>
+                <input type="number" id="mousse" name="mousse" min="0" value="0" />
+            </div>
+            <div class="item">
+                <label for="refri">Refri (R$ 2,00) - Estoque: <span id="estoque-refri">10</span></label>
+                <input type="number" id="refri" name="refri" min="0" value="0" />
+            </div>
+            <div class="item">
+                <label for="jogo">Jogo (R$ 2,00) - Estoque: <span id="estoque-jogo">10</span></label>
+                <input type="number" id="jogo" name="jogo" min="0" value="0" />
+            </div>
+            <button type="button" class="comprar-btn" id="comprar-btn">Comprar</button>
+        </form>
+    </div>
+</section>
+<!-- Adicionando a seção de administração -->
+<section id="admin-section" class="section">
+    <h3>Área Administrativa</h3>
+    <div id="admin-login">
+        <input type="password" id="admin-password" placeholder="Digite a senha de administrador">
+        <button type="button" id="admin-login-btn">Entrar</button>
+    </div>
+    <div id="admin-estoque" class="hidden">
+        <h4>Editar Estoque</h4>
+        <form id="form-admin">
+            <div class="item">
+                <label for="admin-bolo">Bolo: </label>
+                <input type="number" id="admin-bolo" min="0" />
+            </div>
+            <div class="item">
+                <label for="admin-esfiha">Esfiha: </label>
+                <input type="number" id="admin-esfiha" min="0" />
+            </div>
+            <div class="item">
+                <label for="admin-cone-pequeno">Cone Pequeno: </label>
+                <input type="number" id="admin-cone-pequeno" min="0" />
+            </div>
+            <div class="item">
+                <label for="admin-cone-grande">Cone Grande: </label>
+                <input type="number" id="admin-cone-grande" min="0" />
+            </div>
+            <div class="item">
+                <label for="admin-mousse">Mousse: </label>
+                <input type="number" id="admin-mousse" min="0" />
+            </div>
+            <div class="item">
+                <label for="admin-refri">Refri: </label>
+                <input type="number" id="admin-refri" min="0" />
+            </div>
+            <div class="item">
+                <label for="admin-jogo">Jogo: </label>
+                <input type="number" id="admin-jogo" min="0" />
+            </div>
+            <button type="button" id="admin-save-btn">Salvar Alterações</button>
+        </form>
+    </div>
+</section>
+
+<main>
+    <section id="home">
+        <div class="titulo-container">
+            <h1>Nossos Colaboradores:</h1>
+            <div class="colaboradores">
+                <div class="colaborador">
+                    <h2>Tropicalia Doces</h2>
+                    <img src="imagens/Tropicalia.jpg" alt="" class="imagem-colaborador">
+                </div>
+                <div class="colaborador">
+                    <h2>Sabor Mágico</h2>
+                    <img src="imagens/sabor.jpg" alt="" class="imagem-colaborador">
+                </div>
+                <div class="colaborador">
+                    <h2>Arte e Doces</h2>
+                    <img src="imagens/ArteeDoces.jpg" class="imagem-colaborador">
+                </div>
+                <div class="colaborador">
+                    <h2>Tentação Salgada</h2>
+                    <img src="imagens/Tentacao.jpg" alt="" class="imagem-colaborador">
+                </div>
+            </div>
+            <p>Todas os nossos empreendedores trazem uma experiência maravilhosa a você. Entre em contato conosco através do nosso menu no topo da página, ou procure alguém de nossa turma!</p>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 Gotham City, CCM JOÃO XXIII. Todos os direitos reservados, By Neves e Josué.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
