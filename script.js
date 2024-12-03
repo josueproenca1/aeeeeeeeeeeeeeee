@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Copiar o número de telefone para a área de transferência
         const numeroTelefone = "+5518991515340";
         navigator.clipboard.writeText(numeroTelefone).then(() => {
-            alert(" pix copiado para area de transferencia");
+            alert(" pix copiado para area de transferencia após a compra mande o comprovante em nosso grupo");
         }).catch(err => {
             console.error("Erro ao copiar o número de telefone: ", err);
         });
